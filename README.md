@@ -1,0 +1,1 @@
+# mediawiki-ainu-i18n
