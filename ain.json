@@ -111,7 +111,7 @@
     "dec": "12月",
     "period-am": "午前",
     "period-pm": "午後",
-    "pagecategories": "{{PLURAL:$1|isoneka}}",
+    "pagecategories": "{{PLURAL:$1|Isoneka}}",
     "category_header": "Isoneka「$1」にあるsos",
     "subcategories": "下位isoneka",
     "category-media-header": "Isoneka「$1」にあるメディア",
