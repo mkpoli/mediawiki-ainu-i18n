@@ -14,7 +14,7 @@
     "tog-hidecategorization": "Sosのisoneka追加・除去を表示しない",
     "tog-extendwatchlist": "最新のものだけでなくすべての変更を表示するようにウォッチリストを拡張",
     "tog-usenewrc": "Asir-inuyeとウォッチリストで、複数の変更をsosごとにまとめる",
-    "tog-editondblclick": "ダブルクリックでsosを編集",
+    "tog-editondblclick": "Sos a=nuye kusu a=kikkik",
     "tog-editsectiononrightclick": "節見出しの右クリックで節を編集 easkay ようにする",
     "tog-watchcreations": "自分が作成したsosやアップロードした cinuyep をウォッチリストに追加",
     "tog-watchdefault": "自分が編集したsosや cinuyep をウォッチリストに追加",
@@ -4240,5 +4240,11 @@
     "action-renameuser": "Iyeywankekur 名の変更",
     "right-renameuser": "Iyeywankekur 名を変更",
     "renameuser-renamed-notice": "Tan iyeywankekur  は iyeywankekur  名を変更しました.\n参考のため、 iyeywankekur  名変更cinuyeamapを以下に示します.",
-    "log-unknown-action": "[[$1]]に未知の操作 “$2” を実行しました"
+    "log-unknown-action": "[[$1]]に未知の操作 “$2” を実行しました",
+    "pagecategorieslink": "Sisakpe:Isoneka",
+    "talkpageheader": "-",
+    "categoryviewer-pagedlinks": "($1) ($2)",
+    "addsection": "+",
+    "category-header-numerals": "$1–$2",
+    "sitetitle": "{{SITENAME}}"
 }
