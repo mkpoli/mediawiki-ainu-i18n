@@ -55,19 +55,33 @@ def main():
             logger.info(f"Found extension {extension_dir.name}")
             with open(extension_dir / "metadata.json", "r") as f:
                 metadata = json.load(f)
-                for source, target in metadata["files"].items():
-                    source_path = extension_dir / source
-                    target_path = REMOTE_EXTENSIONS_DIR / extension_dir.name / target
+
+                for source_dir, target_dir in metadata["directories"].items():
+                    source_path = extension_dir / source_dir
+                    target_path = (
+                        REMOTE_EXTENSIONS_DIR / extension_dir.name / target_dir
+                    )
+
                     logger.info(
-                        f"Uploading '{source_path}' to '{target_path.as_posix()}'..."
+                        f"Found directory mapping {source_path} -> {target_path}"
                     )
 
                     ftp.cwd("/")
-                    ftp.cwd(target_path.parent.as_posix())
+                    ftp.cwd(target_path.as_posix())
 
-                    with open(source_path, "rb") as f:
-                        ftp.storbinary(f"STOR {target_path.name}", fp=f)
-                    logger.info(f"Uploaded as '{target_path.as_posix()}' ")
+                    for lang in TARGET_LANGUAGES:
+                        source_file = source_path / f"{lang}.json"
+                        if not source_file.is_file():
+                            continue
+
+                        with open(source_file, "rb") as f:
+                            logger.info(
+                                f"Uploading '{source_file}' to '{target_path.as_posix()}/{source_file.name}'..."
+                            )
+                            ftp.storbinary(f"STOR {source_file.name}", fp=f)
+                        logger.info(
+                            f"Uploaded as '{target_path.as_posix()}/{source_file.name}' "
+                        )
 
     ftp.quit()
 
