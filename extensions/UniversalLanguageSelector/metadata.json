@@ -1,5 +1,6 @@
 {
-    "files": {
-        "./ain.json": "./i18n/ain.json"
+    "directories": {
+        "./": "./i18n/",
+        "./api/": "./i18n/api/"
     }
 }
