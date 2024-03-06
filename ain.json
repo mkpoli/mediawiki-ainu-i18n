@@ -983,7 +983,7 @@
     "searchmenu-exists": "{{SITENAME}}には “[[:$1]]” sekor re an sosがあります. {{PLURAL:$2|0=|検索で見つかった他のsosも参照してください. }}",
     "searchmenu-new": "Tan wiki or ta “[[:$1]]” sekor sos asinno a=kar yan! {{PLURAL:$2|0=|A=hunara wa a=pa mosma okay sos a=nukar wa un=kore yan!}}",
     "searchprofile-articles": "Itaksay ipe sos",
-    "searchprofile-images": "マルチメディア",
+    "searchprofile-images": "Innemencia",
     "searchprofile-everything": "Opitta",
     "searchprofile-advanced": "Nokanpe",
     "searchprofile-articles-tooltip": "$1 a=oyhunara",
