@@ -68,5 +68,10 @@
     "ext-uls-actions-menu-language-settings-item-label": "Itak-anu ikotor a=nukar",
     "ext-uls-empty-state-header-actions-available": "Mosma an itak isam. Eci=housi rusuy ya?",
     "ext-uls-empty-state-desc-actions-available": "Poronno itak ani itaksay-ipe a=nukar easkay",
-    "ext-uls-add-languages-button-label": "Itak housi"
+    "ext-uls-add-languages-button-label": "Itak housi",
+    "ext-uls-setlang-error": "A=eramasu itak asire a=hayta. Hayta: $1",
+    "ext-uls-empty-state-header": "Na itak isam",
+    "ext-uls-empty-state-desc": "Na eywanke easkay itak isam",
+    "uls-ime-helppage": "https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:UniversalLanguageSelector/Input_methods/$1",
+    "ext-uls-setlang-message": "Tan rinko <strong>$1 ($2)</strong> ani uturka a=nukar hi a=cipa"
 }
