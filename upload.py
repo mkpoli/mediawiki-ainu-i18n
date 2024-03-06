@@ -1,5 +1,6 @@
 import ftplib
 import json
+import yaml
 import os
 
 from dotenv import load_dotenv
@@ -49,12 +50,12 @@ def main():
 
     # Upload extension translations
     for extension_dir in LOCAL_EXTENSIONS_DIR.glob("*"):
-        if extension_dir.is_dir() and "metadata.json" in [
+        if extension_dir.is_dir() and "metadata.yml" in [
             file.name for file in extension_dir.glob("*")
         ]:
             logger.info(f"Found extension {extension_dir.name}")
-            with open(extension_dir / "metadata.json", "r") as f:
-                metadata = json.load(f)
+            with open(extension_dir / "metadata.yml", "r") as f:
+                metadata = yaml.load(f, Loader=yaml.FullLoader)
 
                 for source_dir, target_dir in metadata["directories"].items():
                     source_path = extension_dir / source_dir

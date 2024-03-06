@@ -1,0 +1,3 @@
+directories:
+  './': './i18n/'
+  './api/': './i18n/api/'
