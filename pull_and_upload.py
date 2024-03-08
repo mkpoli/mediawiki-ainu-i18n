@@ -34,6 +34,9 @@ REMOTE_EXTENSIONS_DIR = Path(FTP_SERVER_MEDIAWIKI_DIR, "extensions")
 
 
 def main():
+    # git pull
+    os.system("git pull")
+
     ftp = ftplib.FTP(FTP_SERVER_HOST)
     ftp.login(FTP_SERVER_USER, FTP_SERVER_PASS)
 
