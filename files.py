@@ -64,7 +64,7 @@ def generate_upload_map(local_dir: str, remote_dir: str) -> dict[Path, Path]:
 def main():
     file_map = generate_upload_map(LOCAL_DIR, FTP_SERVER_MEDIAWIKI_DIR)
     for local, remote in file_map.items():
-        print(f"{local} -> {remote}")
+        print(f"{local}\n  -> {remote}")
 
 
 if __name__ == "__main__":
