@@ -28,6 +28,16 @@ def generate_upload_map(local_dir: str, remote_dir: str) -> dict[Path, Path]:
         remote_path = remote_i18n_dir / f"{lang}.json"
         upload_map[local_path] = remote_path
 
+    remote_messages_dir = Path(remote_dir, "languages", "messages")
+
+    # Upload Messages
+    for lang in TARGET_LANGUAGES:
+        messages_dir = Path(local_dir, "messages")
+
+        for file in messages_dir.glob(f"Messages{lang.title()}*.php"):
+            remote_path = remote_messages_dir / file.name
+            upload_map[file.resolve()] = remote_path
+
     # Conversion results
     for file in DIST_DIR.glob("*.json"):
         file_path = file.resolve()
