@@ -251,6 +251,17 @@ slack = ["slack-sdk"]
 telegram = ["requests"]
 
 [[package]]
+name = "types-pyyaml"
+version = "6.0.12.12"
+description = "Typing stubs for PyYAML"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-PyYAML-6.0.12.12.tar.gz", hash = "sha256:334373d392fde0fdf95af5c3f1661885fa10c52167b14593eb856289e1855062"},
+    {file = "types_PyYAML-6.0.12.12-py3-none-any.whl", hash = "sha256:c05bc6c158facb0676674b7f11fe3960db4f389718e19e62bd2b84d6205cfd24"},
+]
+
+[[package]]
 name = "win32-setctime"
 version = "1.1.0"
 description = "A small Python utility to set file creation time on Windows"
@@ -267,4 +278,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "35ecd240a28dec20b0bfcecc35b12be856f8f02633d62363a8619d17b08d2719"
+content-hash = "7916e74376520510d1cbce0a6eb0c42a1c301afe18264cc1b677fd81b53cd6e2"

@@ -1,11 +1,11 @@
 import ftplib
-import json
-import yaml
 import os
 
 from dotenv import load_dotenv
 from loguru import logger
 from pathlib import Path
+from convert import main as convert_main
+from files import generate_upload_map
 
 load_dotenv()
 
@@ -33,61 +33,38 @@ LOCAL_EXTENSIONS_DIR = Path(LOCAL_DIR, "extensions")
 REMOTE_EXTENSIONS_DIR = Path(FTP_SERVER_MEDIAWIKI_DIR, "extensions")
 
 
+def upload_file(ftp: ftplib.FTP, local_file: Path, remote_file: Path) -> None:
+    """
+    Uploads a single file to the FTP server.
+
+    :param ftp: An active FTP connection object.
+    :param local_file: Path to the local file to upload.
+    :param remote_file: The target path on the FTP server.
+    """
+    remote_dir = Path(remote_file).parent
+    ftp.cwd("/")
+    ftp.cwd(remote_dir.as_posix())
+    with open(local_file, "rb") as file:
+        logger.info(f"Uploading '{local_file}' to '{remote_file}'...")
+        ftp.storbinary(f"STOR {Path(remote_file).name}", file)
+    logger.info(f"Uploaded '{local_file}' as '{remote_file}'")
+
+
 def main():
     # git pull
     os.system("git pull")
 
-    ftp = ftplib.FTP(FTP_SERVER_HOST)
-    ftp.login(FTP_SERVER_USER, FTP_SERVER_PASS)
+    # convert
+    convert_main()
 
-    ftp.cwd(REMOTE_I18N_DIR.as_posix())
+    # get files
+    files = generate_upload_map(LOCAL_DIR, FTP_SERVER_MEDIAWIKI_DIR)
 
-    # Upload translations
-    for lang in TARGET_LANGUAGES:
-        path = Path(LOCAL_DIR, f"{lang}.json")
-        target = Path(REMOTE_I18N_DIR, f"{lang}.json")
-        with open(path, "rb") as f:
-            logger.info(f"Uploading '{path}' to '{target.as_posix()}'...")
-            ftp.storbinary(f"STOR {lang}.json", fp=f)
-        logger.info(f"Uploaded as '{target.as_posix()}'")
+    with ftplib.FTP(FTP_SERVER_HOST) as ftp:
+        ftp.login(FTP_SERVER_USER, FTP_SERVER_PASS)
 
-    # Upload extension translations
-    for extension_dir in LOCAL_EXTENSIONS_DIR.glob("*"):
-        if extension_dir.is_dir() and "metadata.yml" in [
-            file.name for file in extension_dir.glob("*")
-        ]:
-            logger.info(f"Found extension {extension_dir.name}")
-            with open(extension_dir / "metadata.yml", "r") as f:
-                metadata = yaml.load(f, Loader=yaml.FullLoader)
-
-                for source_dir, target_dir in metadata["directories"].items():
-                    source_path = extension_dir / source_dir
-                    target_path = (
-                        REMOTE_EXTENSIONS_DIR / extension_dir.name / target_dir
-                    )
-
-                    logger.info(
-                        f"Found directory mapping {source_path} -> {target_path}"
-                    )
-
-                    ftp.cwd("/")
-                    ftp.cwd(target_path.as_posix())
-
-                    for lang in TARGET_LANGUAGES:
-                        source_file = source_path / f"{lang}.json"
-                        if not source_file.is_file():
-                            continue
-
-                        with open(source_file, "rb") as f:
-                            logger.info(
-                                f"Uploading '{source_file}' to '{target_path.as_posix()}/{source_file.name}'..."
-                            )
-                            ftp.storbinary(f"STOR {source_file.name}", fp=f)
-                        logger.info(
-                            f"Uploaded as '{target_path.as_posix()}/{source_file.name}' "
-                        )
-
-    ftp.quit()
+        for local_file, remote_file in files.items():
+            upload_file(ftp, local_file, remote_file)
 
 
 if __name__ == "__main__":
