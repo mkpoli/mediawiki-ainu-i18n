@@ -12,6 +12,14 @@ DIST_DIR = BASE_DIR / "dist"
 
 
 def convert_word(text: str):
+    if "<" in text:
+        # Keep HTML tag names as is, only extract <tag>innerText</tag> between and convert it
+        return re.sub(
+            r"<(.*?)>(.*?)</(.*?)>",
+            lambda m: f"<{m.group(1)}>{convert_word(m.group(2))}</{m.group(3)}>",
+            text,
+        )
+
     for word in re.findall(r"[\p{scx=Latn}=]+", text):
         if all(char.isupper() for char in word):
             # SITENAME, etc. reserved words
