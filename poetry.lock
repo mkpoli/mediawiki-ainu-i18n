@@ -2,13 +2,13 @@
 
 [[package]]
 name = "ainconv"
-version = "0.3.0"
+version = "0.4.0"
 description = "Converts Ainu text between different scripts (Katakana, Latin, Cyrillic and more)"
 optional = false
-python-versions = ">=3.12,<4.0"
+python-versions = ">=3.9,<4.0"
 files = [
-    {file = "ainconv-0.3.0-py3-none-any.whl", hash = "sha256:a096ad5668267e08577ac0ff0990d155079815b56be79ca97aa679011da3b86a"},
-    {file = "ainconv-0.3.0.tar.gz", hash = "sha256:ce7b58213308d142f64df1dfb7b5602a82440b3ffcf0acf6dbf74e6c52d2e878"},
+    {file = "ainconv-0.4.0-py3-none-any.whl", hash = "sha256:7a549f37b9ae091fdfe64ac83f23a74b4f041846616583746a2bedd85eb9dcf2"},
+    {file = "ainconv-0.4.0.tar.gz", hash = "sha256:1857af5e613a3d449c7234b8a7ca34614dc8c9c236aba2affa6d25a46642dd70"},
 ]
 
 [package.dependencies]
@@ -278,4 +278,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "7916e74376520510d1cbce0a6eb0c42a1c301afe18264cc1b677fd81b53cd6e2"
+content-hash = "537b2d6e04ff7dfc974c8bd08aed12ec59461bc227687c9ad20df6d115b8ade6"
