@@ -1,3 +1,7 @@
 directories:
   './': './i18n/'
   './api/': './i18n/api/'
+  './jquery': './lib/jquery.uls/i18n/'
+
+files:
+  './jquery/jquery.uls.data.js': './lib/jquery.uls/src/jquery.uls.data.js'

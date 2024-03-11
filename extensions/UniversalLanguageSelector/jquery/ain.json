@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mkpoli"
+		]
+	},
+	"uls-region-WW": "Mosir epitta",
+	"uls-region-SP": "Sisak",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Aprika",
+	"uls-region-EU": "Ewropa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Noskiuncupka",
+	"uls-region-PA": "Síatuy",
+	"uls-region-all": "Itak opitta",
+	"uls-no-results-found": "A=hunara wa a=turaynu",
+	"uls-common-languages": "Yayan itak",
+	"uls-no-results-suggestion-title": "Ikaanun a=hunara na:",
+	"uls-search-help": "Itak rehe, itakitokpa rehe, itak ISO ius cipiskip, itak sisserke a=kohunara easkay.",
+	"uls-search-placeholder": "Itak a=hunara",
+	"uls-search-placeholder-short": "A=hunara"
+}
