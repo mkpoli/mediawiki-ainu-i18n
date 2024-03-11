@@ -44,10 +44,13 @@ def upload_file(ftp: ftplib.FTP, local_file: Path, remote_file: Path) -> None:
     remote_dir = Path(remote_file).parent
     ftp.cwd("/")
     ftp.cwd(remote_dir.as_posix())
+
+    already_exists = remote_file.name in ftp.nlst()
+
     with open(local_file, "rb") as file:
         logger.info(f"Uploading '{local_file}' to '{remote_file}'...")
         ftp.storbinary(f"STOR {Path(remote_file).name}", file)
-    logger.info(f"Uploaded '{local_file}' as '{remote_file}'")
+    logger.info(f"{'Overwritten' if already_exists else 'Created' } '{remote_file}'")
 
 
 def main():
