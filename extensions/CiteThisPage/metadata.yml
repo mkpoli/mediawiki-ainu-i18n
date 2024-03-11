@@ -1,0 +1,5 @@
+directories:
+  './': './i18n/'
+
+files:
+  './CiteThisPage.alias.php': './CiteThisPage.alias.php'
