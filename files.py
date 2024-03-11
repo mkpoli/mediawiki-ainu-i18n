@@ -98,6 +98,18 @@ def generate_upload_map(local_dir: str, remote_dir: str) -> dict[Path, Path]:
     return upload_map
 
 
+def get_relative_local_path(path: Path) -> Path:
+    if not LOCAL_DIR:
+        raise ValueError("LOCAL_DIR not set")
+    return path.relative_to(Path(LOCAL_DIR).resolve())
+
+
+def get_relative_remote_path(path: Path) -> Path:
+    if not FTP_SERVER_MEDIAWIKI_DIR:
+        raise ValueError("FTP_SERVER_MEDIAWIKI_DIR not set")
+    return path.relative_to(Path(FTP_SERVER_MEDIAWIKI_DIR).resolve())
+
+
 def main():
     resolved_local_dir = Path(LOCAL_DIR).resolve()
 

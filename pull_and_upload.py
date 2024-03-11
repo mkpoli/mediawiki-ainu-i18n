@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from loguru import logger
 from pathlib import Path
 from convert import main as convert_main
-from files import generate_upload_map
+from files import generate_upload_map, get_relative_remote_path, get_relative_local_path
 
 load_dotenv()
 
@@ -47,8 +47,11 @@ def upload_file(ftp: ftplib.FTP, local_file: Path, remote_file: Path) -> None:
 
     already_exists = remote_file.name in ftp.nlst()
 
+    relative_local_path = get_relative_local_path(local_file)
+    relative_remote_path = get_relative_remote_path(remote_file)
+
     with open(local_file, "rb") as file:
-        logger.info(f"Uploading '{local_file}' to '{remote_file}'...")
+        logger.info(f"Uploading '{relative_local_path}' to '{relative_remote_path}'...")
         ftp.storbinary(f"STOR {Path(remote_file).name}", file)
     logger.info(f"{'Overwritten' if already_exists else 'Created' } '{remote_file}'")
 
