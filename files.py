@@ -107,7 +107,7 @@ def get_relative_local_path(path: Path) -> Path:
 def get_relative_remote_path(path: Path) -> Path:
     if not FTP_SERVER_MEDIAWIKI_DIR:
         raise ValueError("FTP_SERVER_MEDIAWIKI_DIR not set")
-    return path.relative_to(Path(FTP_SERVER_MEDIAWIKI_DIR).resolve())
+    return path.relative_to(Path(FTP_SERVER_MEDIAWIKI_DIR))
 
 
 def main():
