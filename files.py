@@ -63,6 +63,12 @@ def generate_upload_map(local_dir: str, remote_dir: str) -> dict[Path, Path]:
                     if source_file.is_file():
                         upload_map[source_file] = target_path / source_file.name
 
+            for source_file, target_file in metadata.get("files", {}).items():
+                source_path = (extension_dir / source_file).resolve()
+                target_path = remote_extensions_dir / extension_dir.name / target_file
+
+                upload_map[source_path] = target_path
+
     # Upload Names.php
     local_names_php = Path(local_dir, "Names.php").resolve()
     remote_names_php = Path(remote_dir, "includes", "languages", "data", "Names.php")
