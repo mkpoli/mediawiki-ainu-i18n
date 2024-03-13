@@ -26,7 +26,7 @@ def find_nested_files_by_metadata(
         with open(local_dir / "metadata.yml", "r") as f:
             metadata = yaml.safe_load(f)  # safer alternative with safe_load
 
-        for source_dir, target_dir in metadata["directories"].items():
+        for source_dir, target_dir in metadata.get("directories", {}).items():
             source_path = local_dir / source_dir
             target_path = remote_dir / target_dir
 
