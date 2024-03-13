@@ -1,0 +1,4 @@
+files:
+  ./AinConverter.php: 'includes/language/converters/AinConverter.php'
+  ./LanguageConverterFactory.php: 'includes/language/LanguageConverterFactory.php'
+  ./LanguageConverter.php: 'includes/language/LanguageConverter.php'
