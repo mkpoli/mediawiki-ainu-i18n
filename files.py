@@ -95,6 +95,14 @@ def generate_upload_map(local_dir: str, remote_dir: str) -> dict[Path, Path]:
     remote_names_php = Path(remote_dir, "includes", "languages", "data", "Names.php")
     upload_map[local_names_php] = remote_names_php
 
+    # Upload converter
+    local_converter_dir = Path(local_dir, "converter")
+    remote_converter_dir = Path(remote_dir)
+
+    upload_map |= find_nested_files_by_metadata(
+        local_converter_dir, remote_converter_dir
+    )
+
     return upload_map
 
 
