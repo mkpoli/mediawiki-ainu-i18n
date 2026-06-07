@@ -19,7 +19,7 @@
 	"mobile-frontend-diffview-bytesadded": "$1 {{PLURAL:$1|バイト}}追加",
 	"mobile-frontend-diffview-bytesnochange": "サイズ変更なし",
 	"mobile-frontend-diffview-bytesremoved": "$1 {{PLURAL:$1|バイト}}除去",
-	"mobile-frontend-diffview-comma": "$1、$2",
+	"mobile-frontend-diffview-comma": "$1, $2",
 	"mobile-frontend-diffview-editcount": "<div>$1</div> {{PLURAL:$1|回編集}}",
 	"mobile-frontend-diffview-title": "差分",
 	"mobile-frontend-edit-login-action": "<strong>{{SITENAME}}改善に協力</strong><br />編集するにはログインしてください。",
