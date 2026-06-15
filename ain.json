@@ -259,7 +259,7 @@
     "collapsible-collapse": "Komo",
     "collapsible-expand": "Sarare",
     "confirmable-confirm": "{{GENDER:$1|}}本当によろしいですか?",
-    "confirmable-yes": "はい",
+    "confirmable-yes": "E",
     "confirmable-no": "Somo",
     "thisisdeleted": "$1を閲覧または復元しますか?",
     "viewdeleted": "$1を閲覧しますか?",
