@@ -15,7 +15,7 @@ any `*.json`.
 - **Write values in Latin script only.** `ain` is authored in Latin (the `ain-latn`
   variant); the repo ships a MediaWiki LanguageConverter (`converter/AinConverter.php`)
   that auto-generates the **katakana** rendering (`ain-kana`). Never hand-write
-  katakana in the JSON. Autonym: `アイヌ イタㇰ / Aynu itak`.
+  katakana in the JSON.
 
 ## 2. The glossary is the source of truth
 
@@ -44,8 +44,9 @@ invent a word. Drafts awaiting review are kept in review notes, not committed to
 - **Romanization**: the affricate is `⟨c⟩` (`ci`, `ca`, `cu`…) and glides are
   `⟨y⟩`/`⟨w⟩` — not `ch`/`ts`/`j`.
 - **Morpheme boundaries are written out**: personal affixes / clitics with `=`
-  (`a=nukar`, `ku=`, `=an`), compounds with `-` (`Itak-uoeroskip`). Keep them —
-  they are Latin-only markers the converter strips before katakana conversion.
+  (`a=nukar`, `ku=`, `=an`), compounds with `-` (`Itak-uoeroskip`). Keep them as
+  written in the glossary — on katakana conversion the converter drops `=` and
+  renders hyphenated compounds segment by segment.
 - **Running prose keeps the personal/citation verb forms** (`a=…`, `…=an`); only
   **clickable action labels drop them for the bare imperative**: search → `Hunara`
   (not `A=hunara`), edit → `Nuye`, delete → `Isamka`. (Matches Vector house style.)
