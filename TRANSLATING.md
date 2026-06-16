@@ -12,6 +12,10 @@ any `*.json`.
 - `extensions/*/` and `skins/*/` repeat the same `ain.json` / `ja.json` /
   `en.json` triple; `metadata.yml` maps local ↔ upstream files.
 - Keys beginning with `@` (e.g. `@metadata`) are not messages — never translate them.
+- **Write values in Latin script only.** `ain` is authored in Latin (the `ain-latn`
+  variant); the repo ships a MediaWiki LanguageConverter (`converter/AinConverter.php`)
+  that auto-generates the **katakana** rendering (`ain-kana`). Never hand-write
+  katakana in the JSON. Autonym: `アイヌ イタㇰ / Aynu itak`.
 
 ## 2. The glossary is the source of truth
 
@@ -37,9 +41,16 @@ invent a word. Drafts awaiting review are kept in review notes, not committed to
   `Rómaunkur`); regular/predictable accent is left unmarked.
 - **Single-branch `{{PLURAL:$1|…}}`** — Ainu has no grammatical plural; do **not**
   add a second branch.
-- **Clickable action labels use the bare imperative**, not the citation `a=`/`A=`
-  form: search → `Hunara` (not `A=hunara`), edit → `Nuye`, delete → `Isamka`.
-  (Matches Vector house style.)
+- **Romanization**: the affricate is `⟨c⟩` (`ci`, `ca`, `cu`…) and glides are
+  `⟨y⟩`/`⟨w⟩` — not `ch`/`ts`/`j`.
+- **Morpheme boundaries are written out**: personal affixes / clitics with `=`
+  (`a=nukar`, `ku=`, `=an`), compounds with `-` (`Itak-uoeroskip`). Keep them —
+  they are Latin-only markers the converter strips before katakana conversion.
+- **Running prose keeps the personal/citation verb forms** (`a=…`, `…=an`); only
+  **clickable action labels drop them for the bare imperative**: search → `Hunara`
+  (not `A=hunara`), edit → `Nuye`, delete → `Isamka`. (Matches Vector house style.)
+- **Capitalization**: sentence-initial words and proper nouns are capitalized
+  (`Rénuye`, `Rómaunkur`); mid-sentence affixed forms stay lowercase (`a=nukar`).
 - **Negation** is `somo ki`.
 - Preserve message **parameters and markup** verbatim: `$1`, `{{GENDER:$1|…}}`,
   `{{SITENAME}}`, `[[links]]`, HTML entities like `&#32;`.
