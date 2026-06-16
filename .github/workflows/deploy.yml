@@ -1,0 +1,38 @@
+name: Deploy to Aynuwiki
+
+# Convert ain.json → katakana and upload the locale (+ Names.php, converter,
+# extension/skin translations) to the live wiki over FTP, on every merge to main.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+# Never run two deploys at once; queue instead of cancelling a half-done upload.
+concurrency:
+  group: deploy-aynuwiki
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install python-dotenv pyyaml loguru "ainconv==0.4.0" regex tqdm
+
+      - name: Convert and upload
+        env:
+          FTP_SERVER_HOST: ${{ secrets.FTP_SERVER_HOST }}
+          FTP_SERVER_USER: ${{ secrets.FTP_SERVER_USER }}
+          FTP_SERVER_PASS: ${{ secrets.FTP_SERVER_PASS }}
+          FTP_SERVER_MEDIAWIKI_DIR: ${{ secrets.FTP_SERVER_MEDIAWIKI_DIR }}
+          LOCAL_DIR: ${{ github.workspace }}
+          TARGET_LANGUAGES: ain
+        run: |
+          mkdir -p dist
+          python pull_and_upload.py
