@@ -39,7 +39,7 @@ invent a word. Drafts awaiting review are kept in review notes, not committed to
 - **Clickable action labels use the bare imperative**, not the citation `a=`/`A=`
   form: search → `Hunara` (not `A=hunara`), edit → `Nuye`, delete → `Isamka`.
   (Matches Vector house style.)
-- **Negation** is `somo ki` (not `somi`).
+- **Negation** is `somo ki`.
 - Preserve message **parameters and markup** verbatim: `$1`, `{{GENDER:$1|…}}`,
   `{{SITENAME}}`, `[[links]]`, HTML entities like `&#32;`.
 - **Keep codes & proper nouns as-is** — they are correctly identical to the
