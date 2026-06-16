@@ -32,8 +32,9 @@ invent a word. Drafts awaiting review are kept in review notes, not committed to
 
 ## 3. Conventions (match existing entries)
 
-- **Latin script**, carrying the glossary's **pitch accents** into running text
-  (e.g. Friday `Kánito`, week `tósay`, `Rómaunkur`).
+- **Latin script**, carrying the glossary's **pitch accents** into running text,
+  but only where the accent is **irregular** (e.g. Friday `Kánito`, week `tósay`,
+  `Rómaunkur`); regular/predictable accent is left unmarked.
 - **Single-branch `{{PLURAL:$1|…}}`** — Ainu has no grammatical plural; do **not**
   add a second branch.
 - **Clickable action labels use the bare imperative**, not the citation `a=`/`A=`
