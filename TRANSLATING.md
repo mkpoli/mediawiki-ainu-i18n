@@ -3,10 +3,6 @@
 Guidelines for contributing translations to this repo. Read this before editing
 any `*.json`.
 
-This guide is written for **human contributors** by default. If you use an AI /
-LLM assistant to help translate, see the additional rules in
-[§7 AI / LLM workflow](#7-ai--llm-workflow).
-
 ## 1. File layout
 
 - **`ain.json`** — the Ainu translation. It is seeded from `ja.json`, so a value
