@@ -3,9 +3,9 @@
 Guidelines for contributing translations to this repo. Read this before editing
 any `*.json`.
 
-Sections 1–5 are **shared reference** for everyone. The audience-specific rules
-are split at the end: [§6 for human contributors](#6-for-human-contributors) and
-[§7 for AI / LLM agents](#7-for-ai--llm-agents).
+This guide is written for **human contributors** by default. If you use an AI /
+LLM assistant to help translate, see the additional rules in
+[§7 AI / LLM workflow](#7-ai--llm-workflow).
 
 ## 1. File layout
 
@@ -81,23 +81,26 @@ jq -n --slurpfile a ain.json --slurpfile j ja.json \
   '[$a[0]|to_entries[]|select(.key|startswith("@")|not)|select($j[0][.key]==.value)|.key]'
 ```
 
-## 6. For human contributors
+## 6. Workflow
 
 - **Verify every translation before committing — especially translations made by
-  AI.** Check each term against the glossary (§2) yourself; do not merge an
+  AI.** Check each term against the glossary (§2) yourself; do not commit an
   AI-produced batch on trust.
 - Small, **single-concern** commits and PRs (the owner merges via PR).
 - **Cite the source** (glossary row / dictionary / corpus) in the commit message.
 - Validate JSON before committing: `jq empty ain.json`.
 - Don't mix unrelated changes (e.g. translations + tooling) in one PR.
 
-## 7. For AI / LLM agents
+## 7. AI / LLM workflow
 
-- **Use the Ainu MCP.** Do not translate from training-data intuition — resolve
-  every term through the `ainu` MCP server (backed by itak.aynu.org / db.aynu.org):
-  `glossary_search`, `glossary_get_entry`, `dictionary_lookup`,
-  `dictionary_reverse_lookup`, `corpus_search`, `grammar_search`, etc.
+If you translate with an AI / LLM assistant, the rules above still apply — plus:
+
+- **Use the Ainu MCP.** The assistant must not translate from training-data
+  intuition — resolve every term through the `ainu` MCP server (backed by
+  itak.aynu.org / db.aynu.org): `glossary_search`, `glossary_get_entry`,
+  `dictionary_lookup`, `dictionary_reverse_lookup`, `corpus_search`,
+  `grammar_search`, etc.
 - Treat the glossary as source of truth; when it has no form, follow the coinage
   rule in §2 (draft → owner approval) — never apply an invented term.
-- Flag every AI-made translation for human verification (§6); do not present
-  unverified output as final.
+- AI output is a draft: a human must verify it against the glossary before it is
+  committed (§6).
