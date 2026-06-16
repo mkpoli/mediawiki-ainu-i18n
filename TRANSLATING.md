@@ -3,6 +3,10 @@
 Guidelines for contributing translations to this repo. Read this before editing
 any `*.json`.
 
+Sections 1–5 are **shared reference** for everyone. The audience-specific rules
+are split at the end: [§6 for human contributors](#6-for-human-contributors) and
+[§7 for AI / LLM agents](#7-for-ai--llm-agents).
+
 ## 1. File layout
 
 - **`ain.json`** — the Ainu translation. It is seeded from `ja.json`, so a value
@@ -15,19 +19,19 @@ any `*.json`.
 
 ## 2. The glossary is the source of truth
 
-Terminology comes from the **Itak-uoeroskip glossary** (_Tane an Aynuitak kotupte_),
-curated by the project owner. **Verify every term against it first.** Do not
-translate from intuition.
+Terminology comes from the **Itak-uoeroskip Ainu glossary**
+(_Tane an / Aynuitak-kotupte_, 2024), curated by the project owner.
+**Verify every term against it first.** Do not translate from intuition.
 
 - Glossary site: <https://itak.aynu.org>
+- Textual sources & dictionaries database: <https://db.aynu.org>
 - Public glossary sheet:
   <https://docs.google.com/spreadsheets/d/1zV0gl4TWV5fkf2r9i_1P1jmH_p7LOzbhZQgm7mPwDdE/edit>
-- Textual sources & dictionaries database: <https://db.aynu.org>
 
 **Coinage rule:** if the glossary has no established form for a term, **draft a
 coinage and get the owner's explicit yes/no before applying it.** Never silently
-invent a word. Drafts awaiting review are collected in chat / review notes, not
-committed to `ain.json`.
+invent a word. Drafts awaiting review are kept in review notes, not committed to
+`ain.json`.
 
 ## 3. Conventions (match existing entries)
 
@@ -77,9 +81,23 @@ jq -n --slurpfile a ain.json --slurpfile j ja.json \
   '[$a[0]|to_entries[]|select(.key|startswith("@")|not)|select($j[0][.key]==.value)|.key]'
 ```
 
-## 6. Workflow
+## 6. For human contributors
 
+- **Verify every translation before committing — especially translations made by
+  AI.** Check each term against the glossary (§2) yourself; do not merge an
+  AI-produced batch on trust.
 - Small, **single-concern** commits and PRs (the owner merges via PR).
 - **Cite the source** (glossary row / dictionary / corpus) in the commit message.
 - Validate JSON before committing: `jq empty ain.json`.
 - Don't mix unrelated changes (e.g. translations + tooling) in one PR.
+
+## 7. For AI / LLM agents
+
+- **Use the Ainu MCP.** Do not translate from training-data intuition — resolve
+  every term through the `ainu` MCP server (backed by itak.aynu.org / db.aynu.org):
+  `glossary_search`, `glossary_get_entry`, `dictionary_lookup`,
+  `dictionary_reverse_lookup`, `corpus_search`, `grammar_search`, etc.
+- Treat the glossary as source of truth; when it has no form, follow the coinage
+  rule in §2 (draft → owner approval) — never apply an invented term.
+- Flag every AI-made translation for human verification (§6); do not present
+  unverified output as final.
