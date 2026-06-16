@@ -24,6 +24,9 @@ def convert_word(text: str):
         if all(char.isupper() for char in word):
             # SITENAME, etc. reserved words
             continue
+        if not re.search(r"\p{scx=Latn}", word):
+            # no Latin letters to romanize (e.g. a bare "=" from key=value markup)
+            continue
         text = text.replace(word, ainconv.latn2kana(word.lower()))
     return text
 
