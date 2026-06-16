@@ -68,6 +68,9 @@ def main():
 
     with ftplib.FTP(FTP_SERVER_HOST) as ftp:
         ftp.login(FTP_SERVER_USER, FTP_SERVER_PASS)
+        # XREA's FTP answers PASV with a 229 (extended passive) reply, which
+        # Python's ftplib.parse227 rejects; force EPSV so the reply is parsed.
+        ftp.makepasv = lambda: ftplib.parse229(ftp.sendcmd("EPSV"), ftp.sock.getpeername())
 
         for local_file, remote_file in files.items():
             upload_file(ftp, local_file, remote_file)
