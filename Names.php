@@ -54,7 +54,7 @@ class Names {
 		'af' => 'Afrikaans', # Afrikaans
 		'ain' => 'アイヌ イタㇰ / Aynu itak', # Ainu
 		'ain-kana' => 'アイヌ イタㇰ (カタカナ イタキトㇰパ)', # Ainu (Katakana)
-		'ain-latn' => 'Ainu itak (Rómaunkur Itakitokpa)', # Ainu (Latin)
+		'ain-latn' => 'Aynu itak (Rómaunkur Itak-itokpa)', # Ainu (Latin)
 		'aln' => 'Gegë', # Gheg Albanian
 		'als' => 'Alemannisch', # Alemannic -- not a valid code, for compatibility. See gsw.
 		'alt' => 'алтай тил', # Altai, T254854
