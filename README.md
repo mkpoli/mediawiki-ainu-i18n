@@ -9,7 +9,7 @@ There `ain.json` file is based on `ja.json` with some Ainu translations. The `ja
 
 There are also localization files in the extension directory, which are having a similar file structure of `ain.json`, `ja.json`, and `en.json` for each extension. The latter two are also located in each extension's distributed package. See those files for the original author. There are also a `metadata.json` file in each extension directory, to denote the mapping relationship between the local and remote localization files.
 
-Welcome to contribute by PR or contact me to join the project. **Before translating, please read [TRANSLATING.md](TRANSLATING.md)** for the conventions, the glossary (source of truth), and reference works. There is also a general purpose glossary table we maintain here:
+Welcome to contribute by PR or contact me to join the project. **Before translating, please read [TRANSLATING.md](TRANSLATING.md)** for the conventions, the glossary (source of truth), and reference works. There is also a general-purpose glossary table we maintain here:
 https://docs.google.com/spreadsheets/d/1zV0gl4TWV5fkf2r9i_1P1jmH_p7LOzbhZQgm7mPwDdE/edit?usp=sharing
 
 ### Japanese
