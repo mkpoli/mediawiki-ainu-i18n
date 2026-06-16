@@ -39,8 +39,9 @@ invent a word. Drafts awaiting review are kept in review notes, not committed to
 - **Latin script**, carrying the glossary's **pitch accents** into running text,
   but only where the accent is **irregular** (e.g. Friday `Kánito`, week `tósay`,
   `Rómaunkur`); regular/predictable accent is left unmarked.
-- **Single-branch `{{PLURAL:$1|…}}`** — Ainu has no grammatical plural; do **not**
-  add a second branch.
+- **Single-branch `{{PLURAL:$1|…}}`** — keep one branch; do **not** add a second
+  (plural) branch. This is a project convention for these UI strings, not a claim
+  about the language; attempts to add plural branches have been reverted.
 - **Romanization**: the affricate is `⟨c⟩` (`ci`, `ca`, `cu`…) and glides are
   `⟨y⟩`/`⟨w⟩` — not `ch`/`ts`/`j`.
 - **Morpheme boundaries are written out**: personal affixes / clitics with `=`
