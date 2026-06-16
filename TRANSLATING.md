@@ -36,29 +36,18 @@ invent a word. Drafts awaiting review are kept in review notes, not committed to
 
 ## 3. Conventions (match existing entries)
 
-- **Latin script**, carrying the glossary's **pitch accents** into running text,
-  but only where the accent is **irregular** (e.g. Friday `Kánito`, week `tósay`,
-  `Rómaunkur`); regular/predictable accent is left unmarked.
-- **Single-branch `{{PLURAL:$1|…}}`** — keep one branch; do **not** add a second
-  (plural) branch. This is a project convention for these UI strings, not a claim
-  about the language; attempts to add plural branches have been reverted.
-- **Romanization**: the affricate is `⟨c⟩` (`ci`, `ca`, `cu`…) and glides are
-  `⟨y⟩`/`⟨w⟩` — not `ch`/`ts`/`j`.
-- **Morpheme boundaries are written out**: personal affixes / clitics with `=`
-  (`a=nukar`, `ku=`, `=an`), compounds with `-` (`Itak-uoeroskip`). Keep them as
-  written in the glossary — on katakana conversion the converter drops `=` and
-  renders hyphenated compounds segment by segment.
-- **Running prose keeps the personal/citation verb forms** (`a=…`, `…=an`); only
-  **clickable action labels drop them for the bare imperative**: search → `Hunara`
-  (not `A=hunara`), edit → `Nuye`, delete → `Isamka`. (Matches Vector house style.)
-- **Capitalization**: sentence-initial words and proper nouns are capitalized
-  (`Rénuye`, `Rómaunkur`); mid-sentence affixed forms stay lowercase (`a=nukar`).
+- **Latin script**; mark pitch accent only where **irregular** (`Kánito`, `tósay`).
+- **Single-branch `{{PLURAL:$1|…}}`** — never add a plural branch (project
+  convention; plural branches have been reverted).
+- **Clickable action labels use the bare imperative** (`Hunara`, `Nuye`, `Isamka`),
+  not the `a=`/`A=` citation form. (Matches Vector house style.)
+- Keep the glossary's punctuation as written — affix `=` (`a=nukar`) and compound
+  `-` (`Itak-uoeroskip`).
 - **Negation** is `somo ki`.
-- Preserve message **parameters and markup** verbatim: `$1`, `{{GENDER:$1|…}}`,
-  `{{SITENAME}}`, `[[links]]`, HTML entities like `&#32;`.
-- **Keep codes & proper nouns as-is** — they are correctly identical to the
-  source: `UTC`, `API`, `ISBN`, `px`, MIME types, foreign calendar month names
-  (Hebrew/Hijri/Iranian), and other-language variant codes (`Hans`, `kk-Cyrl`, …).
+- Preserve **parameters and markup** verbatim: `$1`, `{{GENDER:$1|…}}`,
+  `{{SITENAME}}`, `[[links]]`, `&#32;`.
+- **Keep codes & non-Ainu proper nouns as-is** unless the glossary gives a form
+  (`UTC`, `API`, `px`, calendar month names, other-language variant codes).
 
 ## 4. Finding untranslated keys
 
@@ -83,11 +72,8 @@ jq -n --slurpfile a ain.json --slurpfile j ja.json \
 
 If you translate with an AI / LLM assistant, the rules above still apply — plus:
 
-- **Use the Ainu MCP.** The assistant must not translate from training-data
-  intuition — resolve every term through the `ainu` MCP server (backed by
-  itak.aynu.org / db.aynu.org): `glossary_search`, `glossary_get_entry`,
-  `dictionary_lookup`, `dictionary_reverse_lookup`, `corpus_search`,
-  `grammar_search`, etc.
+- **Use the Ainu MCP.** Don't translate from training-data intuition — resolve
+  every term through the `ainu` MCP server's glossary/dictionary/corpus lookups.
 - Treat the glossary as source of truth; when it has no form, follow the coinage
   rule in §2 (draft → owner approval) — never apply an invented term.
 - AI output is a draft: a human must verify it against the glossary before it is
