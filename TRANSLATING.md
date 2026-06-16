@@ -58,30 +58,7 @@ invent a word. Drafts awaiting review are kept in review notes, not committed to
   source: `UTC`, `API`, `ISBN`, `px`, MIME types, foreign calendar month names
   (Hebrew/Hijri/Iranian), and other-language variant codes (`Hans`, `kk-Cyrl`, …).
 
-## 4. Reference works
-
-The glossary's `註 / Notes` cite these by author abbreviation:
-
-| Abbr. | Dictionary |
-|---|---|
-| 田村 | Tamura Suzuko, _Ainu-go Saru hōgen jiten_ (Saru dialect, 1996) |
-| 萱野 | Kayano Shigeru, _Kayano's Ainu Dictionary_ (1996) |
-| 中川 | Nakagawa Hiroshi, _Ainu-go Chitose hōgen jiten_ (Chitose dialect, 1995) |
-| 知里 | Chiri Mashiho, _Bunrui Ainu-go jiten_ (Categorized Ainu Dictionary, 1987) |
-| 太田 | Ota, _Japanese–Ainu Dictionary_ (2022) |
-| 服部 | Hattori, _Ainu Dialect Dictionary_ (comparative, 1964) |
-
-Grammar:
-
-- 金田一京助・知里真志保『アイヌ語法概説』 (Kindaichi & Chiri, 1936)
-- 田村すゞ子『アイヌ語入門』 (Tamura, 1996)
-- 佐藤知己『アイヌ語文法の基礎』 (Satō, 2008)
-- 中川裕『アイヌ語広文典』 (Nakagawa, 2024) — cited as `広文`
-- 北海道ウタリ協会『アコㇿイタㇰ：テキストアイヌ語会話』 (1994)
-- Anna Bugaeva (ed.), _Handbook of the Ainu Language_
-- Masayoshi Shibatani, _The Languages of Japan_ (1990) — cited as `柴谷`
-
-## 5. Finding untranslated keys
+## 4. Finding untranslated keys
 
 A value still equal to its `ja.json` counterpart is untranslated:
 
@@ -90,7 +67,7 @@ jq -n --slurpfile a ain.json --slurpfile j ja.json \
   '[$a[0]|to_entries[]|select(.key|startswith("@")|not)|select($j[0][.key]==.value)|.key]'
 ```
 
-## 6. Workflow
+## 5. Workflow
 
 - **Verify every translation before committing — especially translations made by
   AI.** Check each term against the glossary (§2) yourself; do not commit an
@@ -100,7 +77,7 @@ jq -n --slurpfile a ain.json --slurpfile j ja.json \
 - Validate JSON before committing: `jq empty ain.json`.
 - Don't mix unrelated changes (e.g. translations + tooling) in one PR.
 
-## 7. AI / LLM workflow
+## 6. AI / LLM workflow
 
 If you translate with an AI / LLM assistant, the rules above still apply — plus:
 
@@ -112,4 +89,4 @@ If you translate with an AI / LLM assistant, the rules above still apply — plu
 - Treat the glossary as source of truth; when it has no form, follow the coinage
   rule in §2 (draft → owner approval) — never apply an invented term.
 - AI output is a draft: a human must verify it against the glossary before it is
-  committed (§6).
+  committed (§5).
