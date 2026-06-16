@@ -57,8 +57,10 @@ def upload_file(ftp: ftplib.FTP, local_file: Path, remote_file: Path) -> None:
 
 
 def main():
-    # git pull
-    os.system("git pull")
+    # git pull (skip in CI: the checkout is already at the target commit, and
+    # there's no tracking branch on a detached HEAD)
+    if not os.getenv("CI"):
+        os.system("git pull")
 
     # convert
     convert_main()
