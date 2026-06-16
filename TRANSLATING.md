@@ -15,9 +15,10 @@ any `*.json`.
 
 ## 2. The glossary is the source of truth
 
-Terminology comes from the **Itak-uoeroskip Ainu glossary**
-(_Tane an / Aynuitak-kotupte_, 2024), curated by the project owner.
-**Verify every term against it first.** Do not translate from intuition.
+Terminology comes from the **Modern Ainu Translation Glossary**
+(_Tane an Aynuitak-kotupte Itak-uoeroskip_ / 現代アイヌ語翻訳用語集), curated by
+the project owner. **Verify every term against it first.** Do not translate from
+intuition.
 
 - Glossary site: <https://itak.aynu.org>
 - Textual sources & dictionaries database: <https://db.aynu.org>
