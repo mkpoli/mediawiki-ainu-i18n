@@ -694,7 +694,7 @@
     "edit-textarea-aria-label": "Wikitext ipemoto エディター",
     "creating": "“$1” を作成中",
     "editingsection": "“$1” a=nuye kor an (ik)",
-    "editingcomment": "“$1” a=nuye (asir ik)",
+    "editingcomment": "“$1” a=nuye kor an (asir ik)",
     "editconflict": "編集の競合: $1",
     "explainconflict": "Tan sosを編集し始めた後に、他の誰かが tan sosを変更しました.\n上側のテキスト領域は現在の最新の状態です.\n編集していた文章は下側のテキスト領域に示されています.\n編集していた文章を、上側のテキスト領域の、既存の文章に組み込んでください.\n上側のテキスト領域の内容<strong>だけ</strong>が、 “$1” をクリックした時に実際に公開されます.",
     "yourtext": "編集中の文章",
