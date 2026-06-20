@@ -1751,7 +1751,7 @@
     "uploadinvalidxml": "アップロードされた cinuyep に含まれる XML sintaksisi a=yaykopekerka a=hayta.",
     "uploadvirus": "Tan cinuyep はウイルスを含んでいます!\n詳細: $1",
     "upload-source": "アップロード元 cinuyep ",
-    "sourcefilename": "Ipemoto cinuyep rehe:",
+    "sourcefilename": "Motoho ne cinuyep rehe:",
     "sourceurl": "アップロード元の URL:",
     "destfilename": "A=anu cinuyep rehe:",
     "upload-maxfilesize": "Cinuyepの最大サイズ: $1",
