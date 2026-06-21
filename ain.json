@@ -2652,7 +2652,7 @@
     "ipb-confirmaction": "本当に実行する場合は、下の “{{int:ipb-confirm}}” 欄にチェックを入れてください.",
     "ipb-edit-dropdown": "ブロック理由を編集",
     "ipb-unblock-addr": "$1のブロックを解除",
-    "ipb-unblock": "Ieywankekur rehe ka IP átores ka kisma a=hosipire",
+    "ipb-unblock": "Ieywankekur rehe hene IP átores hene kisma a=hosipire",
     "ipb-blocklist": "An kisma a=nukar",
     "ipb-blocklist-contribs": "{{GENDER:$1|$1}}の投稿の一覧",
     "ipb-blocklist-duration-left": "残り $1",
