@@ -763,7 +763,7 @@
     "content-json-empty-array": "空の配列",
     "unsupported-content-model": "<strong>警告:</strong> コンテンツモデル$1は tan wikiではサポートしていません.",
     "unsupported-content-diff": "コンテンツモデル$1の差分はサポートしていません",
-    "unsupported-content-diff2": "ipe moter $1 newa $2 sinna anak tan wiki or ta a=eywanke ka eaykap.",
+    "unsupported-content-diff2": "Ipe moter $1 newa $2 sinna anak tan wiki or ta a=eywanke ka eaykap.",
     "duplicate-args-warning": "<strong>警告:</strong> [[:$1]]は複数の “$3” パラメーターを伴って[[:$2]]を呼び出しています. 提供されている最後の値のみが使用されます.",
     "duplicate-args-category": "Nokaor a=tak hine 引数が重複している sos",
     "duplicate-args-category-desc": "引数が重複したNokaor呼び出しを含むsos. 例: <code><nowiki>{{foo|bar=1|bar=2}}</nowiki></code>、<code><nowiki>{{foo|bar|1=baz}}</nowiki></code>",
