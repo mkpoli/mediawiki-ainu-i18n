@@ -1612,7 +1612,7 @@
     "rcfilters-filter-showlinkedfrom-option-label": "指定されたsosから<strong>リンクされているsos（リンク先）</strong>",
     "rcfilters-filter-showlinkedto-label": "$1 un rinko sos or ta an sinna a=nukare",
     "rcfilters-filter-showlinkedto-option-label": "指定されたsosに<strong>リンクしているsos（ rinko moto ）</strong>",
-    "rcfilters-target-page-placeholder": "Sos rehe (isoneka rehe ka) nuye yan",
+    "rcfilters-target-page-placeholder": "Sos rehe hene isoneka rehe hene nuye yan",
     "rcfilters-allcontents-label": "すべての本文",
     "rcfilters-alldiscussions-label": "Ukoytak opitta",
     "rcnotefrom": "以下は<strong>$3 $4</strong>以降の{{PLURAL:$5|更新です}} (最大 <strong>$1</strong> 件).",
