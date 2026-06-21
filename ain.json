@@ -3332,7 +3332,7 @@
     "autosumm-removed-redirect": "[[$1]] へのリダイレクトを解除しました",
     "autosumm-changed-redirect-target": "転送先を [[$1]] から [[$2]] に変更しました",
     "autosumm-new": "“$1” ari sos a=kar.",
-    "autosumm-newblank": "ipe sak sos a=kar.",
+    "autosumm-newblank": "Ipe sak sos a=kar.",
     "size-bytes": "$1 {{PLURAL:$1|bait}}",
     "size-kilobytes": "$1 KB",
     "size-megabytes": "$1 MB",
