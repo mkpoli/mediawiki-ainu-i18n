@@ -1088,7 +1088,7 @@
     "localtime": "地域の時刻:",
     "timezoneuseserverdefault": "{{SITENAME}} siurenkare a=eywanke ($1)",
     "timezoneuseoffset": "その他 (UTCからの時差)",
-    "timezone-useoffset-placeholder": "Ciiosankep: “-07:00” ka “01:00”",
+    "timezone-useoffset-placeholder": "Ciiosankep: “-07:00” hene “01:00” hene",
     "timezone-invalid": "無効なタイムゾーンまたはオフセットです.",
     "servertime": "サーバーの時刻:",
     "guesstimezone": "ブラウザーの設定から入力",
