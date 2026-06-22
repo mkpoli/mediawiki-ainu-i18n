@@ -914,7 +914,7 @@
     "mergehistory-box": "Tu sos werson sinep ne a=kar",
     "mergehistory-from": "A=uyna sos:",
     "mergehistory-into": "統合先のsos:",
-    "mergehistory-list": "Sinep ne a=kar easkay nuye huskoanpe",
+    "mergehistory-list": "Sinep ne a=kar easkay inuye huskoanpe",
     "mergehistory-merge": "以下の [[:$1]]  huskoanpeを [[:$2]] に統合 easkay.\n特定の日時以前に作成されたwersonのみを統合するには、ラジオボタンでwersonを選択してください.\n案内リンクを使用すると理由欄が初期化されるためご注意ください.",
     "mergehistory-go": "Sinep ne a=kar easkay werson a=nukar",
     "mergehistory-submit": "Werson sinep ne kar",
