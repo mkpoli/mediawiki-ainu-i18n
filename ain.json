@@ -2942,7 +2942,7 @@
     "import-rootpage-invalid": "A=nuye moto sos rehe anak komke.",
     "import-rootpage-nosubpage": "Moto sos re-uske “$1” anak sos po easkayre ka somo ki.",
     "importlogpage": "A=omare cinuyeamap",
-    "importlogpagetext": "Inkaruskur kar wa, mosma an wiki nuye huskoanpe tura an sos a=omare.",
+    "importlogpagetext": "Inkaruskur kar wa, mosma an wiki inuye huskoanpe tura an sos a=omare.",
     "import-logentry-upload-detail": "$1 {{PLURAL:$1|werson}} a=omare",
     "import-logentry-interwiki-detail": "$2 wano a=omare $1 {{PLURAL:$1|werson}}",
     "javascripttest": "JavaScript をテスト中",
