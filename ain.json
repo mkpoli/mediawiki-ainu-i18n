@@ -837,7 +837,7 @@
     "history-edit-tags": "A=numke werson tak a=nuye",
     "history-empty": "Werson a=turaynu.",
     "rev-deleted-comment": "(要約は除去されています)",
-    "rev-deleted-user": "(ieywankekur rehe a=uyna)",
+    "rev-deleted-user": "(iyeywankekur rehe a=uyna wa isam)",
     "rev-deleted-event": "(ログの詳細は除去されています)",
     "rev-deleted-user-contribs": "[ iyeywankekur  名またはIPアドレスは除去されました - その編集は isapte cinuyeamap で非表示にされています]",
     "rev-deleted-text-permission": "Tanwersonは<strong>削除されています</strong>.\n[{{fullurl:{{#Special:Log}}/delete|page=$1}} 削除cinuyeamap]に詳細asursosがあるかもしれません.",
