@@ -3362,7 +3362,7 @@
     "watchlistedit-normal-title": "ウォッチリストの編集",
     "watchlistedit-normal-legend": "A=nukarus pe or wa sos a=isamka",
     "watchlistedit-normal-explain": "ウォッチリストに入っている sos rehe を以下に表示しています.\nsosを除去するには、隣のボックスにチェックを入れて “{{int:watchlistedit-normal-submit}}” a=kik wa un=kore yan.\nまた、[[Special:EditWatchlist/raw|ウォッチリストをテキストで編集]]も使用 easkay.",
-    "watchlistedit-normal-submit": "Isamka",
+    "watchlistedit-normal-submit": "Sos rehe a=isamka",
     "watchlistedit-normal-check-all": "すべてチェック",
     "watchlistedit-normal-done": "A=nukarus pe wano {{PLURAL:$1|$1 re}} a=isamka:",
     "watchlistedit-raw-title": "ウォッチリストをテキストで編集",
