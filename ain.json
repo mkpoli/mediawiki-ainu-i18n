@@ -1663,7 +1663,7 @@
     "recentchanges-page-removed-from-category-bundled": "[[:$1]]をisonekaから除外. [[Special:WhatLinksHere/$1| tan sosは他のsosに含まれています]]",
     "autochange-username": "MediaWiki自動変更",
     "upload": "Cinuyep epuni",
-    "uploadbtn": "Epuni",
+    "uploadbtn": "Cinuyep a=epuni",
     "reuploaddesc": "アップロードを中止してアップロードフォームへ戻る",
     "upload-tryagain": "Sinna cinuyep uepeker sanke",
     "upload-tryagain-nostash": "Suy epuni cinuyep newa a=sinnare uepeker a=sanke",
