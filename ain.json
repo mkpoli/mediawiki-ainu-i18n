@@ -4116,7 +4116,7 @@
     "linkaccounts-success-text": "アカウントが関連付けられました.",
     "linkaccounts-submit": "アカウントを関連付ける",
     "cannotunlink-no-provider-title": "リンクを解除するリンク済みアカウントはありません",
-    "cannotunlink-no-provider": "Rinko a=isamka easkay, a=korinko cinuyeanup ka isam.",
+    "cannotunlink-no-provider": "A=kote hi a=isamka easkay cinuyeanup isam.",
     "unlinkaccounts": "アカウントの関連付け解除",
     "unlinkaccounts-success": "アカウントの関連付けが解除されました.",
     "authenticationdatachange-ignored": "認証データの変更は処理されませんでした. プロバイダーが設定されていない可能性があります.",
