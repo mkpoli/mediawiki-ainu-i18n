@@ -2420,7 +2420,7 @@
     "rollbacklinkcount": "$1{{PLURAL:$1|編集}}を巻き戻し",
     "rollbacklinkcount-morethan": "$1{{PLURAL:$1|編集}}以上を巻き戻し",
     "rollbackfailed": "巻き戻しに失敗しました",
-    "rollback-missingparam": "A=eywanke ca isam.",
+    "rollback-missingparam": "A=nisuk pe or ta a=konrusuy ca isam.",
     "rollback-missingrevision": "wersonのasursosを読み込めませんでした.",
     "cantrollback": "編集を差し戻せません.\n最後の投稿者が, tan sosの唯一の作者です.",
     "alreadyrolled": "Sos[[:$1]]の[[User:$2|$2]] ([[User talk:$2|Ukoytak]]{{int:pipe-separator}}[[Special:Contributions/$2|{{int:contribslink}}]]) による編集を巻き戻せません.\n他の iyeywankekur  が既に編集または巻き戻しを行ったためです.\nTan sosの最後の編集は[[User:$3|$3]] ([[User talk:$3|Ukoytak]]{{int:pipe-separator}}[[Special:Contributions/$3|{{int:contribslink}}]]) によるものです.",
