@@ -2439,7 +2439,7 @@
     "changecontentmodel-reason-label": "理由:",
     "changecontentmodel-submit": "Kiru",
     "changecontentmodel-success-title": "コンテンツモデルは変更されました",
-    "changecontentmodel-success-text": "[[:$1]] ipe anak a=kiru.",
+    "changecontentmodel-success-text": "[[:$1]] ipe katuhu anak a=kiru.",
     "changecontentmodel-cannot-convert": "[[:$1]]のコンテンツは$2の型には変換 eaykap.",
     "changecontentmodel-nodirectediting": "$1 ipe moter anak yaykata a=nuye easkay ka somo ki.",
     "changecontentmodel-emptymodels-title": "利用可能なコンテンツモデルがありません",
