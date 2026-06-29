@@ -592,7 +592,7 @@
     "changeemail-header": "あなたのメールアドレスを変更するには, tan フォームを完成させます. もし、あなたのアカウントから任意のメールアドレスの関連付けを削除したい場合は、フォームの送信時に、 asir メールアドレスを空白のままにします.",
     "changeemail-no-info": "Tan sos ouse a=nukar easkay kuni, yayahunte a=ki kuni p ne.",
     "changeemail-oldemail": "現在のメールアドレス:",
-    "changeemail-newemail": "Asir imerukampi:",
+    "changeemail-newemail": "Asir imerukampi átores:",
     "changeemail-newemail-help": "あなたのメールアドレスを削除したい場合は, tan フィールドを空白のままにする必要があります. あなたは忘れてしまったciesinaitakをリセットすることができず、また、メールアドレスが削除された場合は, tan wikiからのメールを受信しません.",
     "changeemail-none": "(なし)",
     "changeemail-password": "{{SITENAME}} ciesinaitak:",
