@@ -1079,7 +1079,7 @@
     "prefs-help-watchlist-token2": "これはあなたのウォッチリスト フィードの秘密のコードです. Tan Tokenを知っている人は誰でもあなたのウォッチリストを読めてしまうため、他の人に教えないでください.\n[[Special:ResetTokens|Tokenを再設定する必要がある場合はここを tapan a=kik wa un=kore]].",
     "prefs-help-tokenmanagement": "あなたのアカウントでウォッチリスト フィードの秘密のコードを参照したりリセット easkay. tan Tokenを知っている人は誰でもあなたのウォッチリストを読めてしまうため、他の人に教えないでください.",
     "prefs-user-downloaddata-label": "アカウントデータへのアクセス:",
-    "prefs-user-downloaddata-info": "Tan cikarkoranpe or wa, ku=cinuyeanup tatum",
+    "prefs-user-downloaddata-info": "Tan cikarkoranpe or wa, ku=kor cinuyeanup tatum",
     "prefs-user-restoreprefs-label": "設定のリセット：",
     "prefs-user-restoreprefs-info": "全ての初期設定を復元する（全てのセクションが対象です）",
     "savedprefs": "Iyeramasu a=ama a",
