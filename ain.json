@@ -3299,7 +3299,7 @@
     "confirm-mcrrestore-title": "Werson a=hosipire",
     "confirm-mcrundo-title": "直前の変更を取り消す",
     "mcrundofailed": "取り消しに失敗しました",
-    "mcrundo-missingparam": "A=eywanke ca isam.",
+    "mcrundo-missingparam": "A=nisuk pe or ta a=konrusuy ca isam.",
     "mcrundo-changed": "Tan sosはあなたが前回 sinna a=nukar 後に変更されています. Asir 変更の査読をお願いします.",
     "mcrundo-parse-failed": "Asir wersonが読み込めませんでした: $1",
     "semicolon-separator": ";&#32;",
