@@ -1690,7 +1690,7 @@
     "minlength1": "Cinuyep reheには少なくとも1文字必要です.",
     "illegalfilename": "Cinuyep rehe “$1” に sos rehe として許可されていない文字が含まれています.\n cinuyep reheを変更してからもう一度アップロードしてください.",
     "filename-toolong": "240 bait kasu cinuyep rehe iteki anu.",
-    "badfilename": "Cinuyep rehe anakne “$1” ne.",
+    "badfilename": "Cinuyep rehe anakne “$1” ne a=kiru.",
     "filetype-mime-mismatch": "Cinuyepの拡張子 “$1” がMIMEタイプ “$2” と一致しません.",
     "filetype-badmime": "MIMEタイプ “$1” の cinuyep のアップロードは許可されていません.",
     "filetype-bad-ie-mime": "許可されていない潜在的危険性のある cinuyep 形式 “$1” としてInternet Explorerに認識されてしまうため, tan cinuyep をアップロード eaykap.",
