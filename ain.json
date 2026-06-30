@@ -696,7 +696,7 @@
     "editingsection": "“$1” a=nuye kor an (ik)",
     "editingcomment": "“$1” a=nuye kor an (asir ik)",
     "editconflict": "Inuyep ukoyki: $1",
-    "explainconflict": "Tan sos e=nuye kor an ayne, oya kur tan sos a=sinna.\nRikun inuye usi or ta tane an sos ipe an.\nE=kar sinna anak ranke inuye usi or ta a=nukar.\nE=kar sinna anak rikun inuye usi or ta an ipe or un ukotep wa oman kuni ne.\n<strong>Rikun inuye usi or ta an ipe patek</strong> “$1” a=kik hi ta a=ikotcaemaka.",
+    "explainconflict": "Tan sos e=nuye kor an ayne, oya kur tan sos a=sinna.\nRikun inuye usi or ta tane an sos ipe an.\nE=kar sinna anak ranke inuye usi or ta a=nukar.\nE=kar sinna anak rikun inuye usi or ta an ipe or un a=ukote wa oman kuni ne.\n<strong>Rikun inuye usi or ta an ipe patek</strong> “$1” a=kik hi ta a=ikotcaemaka.",
     "yourtext": "E=kor itak",
     "storedversion": "A=ama wa an werson",
     "editingold": "<strong>Yaytupare: tan sos husko werson a=nuye ruwe ne.</strong>\nA=ikotcaemaka yakun, tan werson okake ta a=kar sinna opitta isam.",
