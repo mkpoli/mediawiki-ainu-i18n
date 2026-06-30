@@ -42,7 +42,7 @@ A **clickable button/link label** uses the bare imperative. A **statement** uses
 4th-person `a=` (impersonal) form.
 - ✅ label: `Hunara` (Search), `Nuye` (Edit), `Isamka` (Delete)
 - ❌ label: `A=hunara`, `A=nuye`
-- ✅ sentence: `Tan sos a=nukarus eaykap.` ("This page cannot be watched.")
+- ✅ sentence: `Tan sos a=sikkasma eaykap.` ("This page cannot be watched.")
 
 ### 2.3 Negation & ability
 - Negation = **`somo ki`** (or `somo` + verb): `Yayahunte ka somo ki` ("not logged in").
@@ -70,11 +70,11 @@ Form the noun explicitly:
 ### 2.6 `-p` / `-pe` nominalizer — fill the valency, mind the syllable
 The nominalizer attaches to a **clause**, so index the verb's arguments first, and choose
 the surface form by the preceding syllable:
-- **Fill valency** — ❌ `nukarus pe` (bare stem) → ✅ `a=nukarus pe` (anukaruspe = watchlist),
-  or `i-nukarus pe`.
-- **`p` after an OPEN (vowel-final) syllable**: `a=sanke p`, `a=pa p`, `a=epuni p`,
-  `a=oyaytupte p`, `kuni p`. ❌ `a=sanke pe`.
-- **`pe` after a CLOSED (consonant-final) syllable**: `a=nukarus pe`, `néno an pe`,
+- **Fill valency** — ❌ `sikkasma p` (bare stem) → ✅ `a=sikkasma p` (4th-person subject
+  filled; = watchlist), or `i-sikkasma p`.
+- **`p` after an OPEN (vowel-final) syllable**: `a=sanke p`, `a=sikkasma p`, `a=pa p`,
+  `a=epuni p`, `a=oyaytupte p`, `kuni p`. ❌ `a=sanke pe`.
+- **`pe` after a CLOSED (consonant-final) syllable**: `a=kor pe`, `néno an pe`,
   `easkay pe` (final glide `-y` counts as closed).
 
 ### 2.7 Possessed "name OF X" = `X rehe`
@@ -107,7 +107,7 @@ Add the coinages to the sheet when convenient (`glossary_add_entry`, `< まぽ`)
 
 | English (MediaWiki) | Ainu | Status | Notes |
 |---|---|---|---|
-| watchlist | `a=nukarus pe` (anukaruspe) | coinage✓ | "watch a page" = `a=nukarus`; "watched pages" = `a=nukarus sos` |
+| watchlist | `a=sikkasma p` | glossary | "watch a page" = `a=sikkasma`; "watched pages" = `a=sikkasma sos`. `sikkasma` 見守る is attested (Nakagawa/Tamura/Chiba/Chiri/Batchelor); replaced Ota-only `a=nukarus` (no corpus) 2026-07-01 |
 | block (n.) | `kisma` | coinage✓ | "block" (v.) = `a=kisma`; **autoblock** = `sikisma`; **unblock** = `kisma a=hosipire` |
 | suppress / suppression | `a=esina` / `esina` | attested | glossary computer_verb r43 (conceal); also **lock** (database) = `a=esina` (disambiguated by object) |
 | overwrite | `kasi a=nuye` | coinage✓ | "write upon" |
