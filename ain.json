@@ -2947,7 +2947,7 @@
     "import-logentry-interwiki-detail": "$2からインポート済みの$1{{PLURAL:$1|werson}}",
     "javascripttest": "JavaScript をテスト中",
     "javascripttest-qunit-intro": "mediawiki.org上の[$1 テストのドキュメント]を参照してください.",
-    "tooltip-pt-userpage": "{{GENDER:|yaani ieywankekur sos}}",
+    "tooltip-pt-userpage": "{{GENDER:|Yaykota ieywankekur sos}}",
     "tooltip-pt-anonuserpage": "A=nuye kor an IP átores ieywankekur sos.",
     "tooltip-pt-tmpuserpage": "あなたの自動生成した iyeywankekur  名",
     "tooltip-pt-mytalk": "{{GENDER:|Yaykota}} ukoytak sos",
