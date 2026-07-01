@@ -3085,7 +3085,7 @@
     "pageinfo-visiting-watchers": "Sos nukarus wa náun inuyep nukar kur cipiskip",
     "pageinfo-few-watchers": "ウォッチしている iyeywankekur   $1 {{PLURAL:$1|人未満}}",
     "pageinfo-few-visiting-watchers": "最近の編集を見に来ている人は、いないかもしれません.",
-    "pageinfo-redirects-name": "Tan sos or un a=oyaytupte sos cipiskip",
+    "pageinfo-redirects-name": "Tan sos or ta a=oyaytukte sos cipiskip",
     "pageinfo-redirects-value": "$1",
     "pageinfo-subpages-name": "Tan sos po cipiskip",
     "pageinfo-subpages-value": "$1 ($2 {{PLURAL:$2|件のリダイレクト}}、$3 {{PLURAL:$3|件の非リダイレクト}})",
