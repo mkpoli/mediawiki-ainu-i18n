@@ -3,6 +3,10 @@
 Guidelines for contributing translations to this repo. Read this before editing
 any `*.json`.
 
+> For the deeper reference — grammar rules with good/bad examples, the local
+> MediaWiki-specific glossary, and accumulated pitfalls — see
+> [`TRANSLATION-GUIDANCE.md`](./TRANSLATION-GUIDANCE.md).
+
 ## 1. File layout
 
 - **`ain.json`** — the Ainu translation. It is seeded from `ja.json`, so a value
