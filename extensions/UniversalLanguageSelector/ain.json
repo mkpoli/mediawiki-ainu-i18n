@@ -4,7 +4,7 @@
             "Mkpoli"
         ]
     },
-    "uls-desc": "Hempakpeka itak anu katu iyeywankekur a=kore",
+    "uls-desc": "Hempakpeka itak anu katu ieywankekur a=kore",
     "uls-plang-title-languages": "Itak",
     "ext-uls-select-language-settings-icon-tooltip": "Itak-anu",
     "ext-uls-undo-language-tooltip-text": "Itak anak $1 wano a=nere",
@@ -56,7 +56,7 @@
     "ext-uls-input-disable-notification-info-interlanguage": "itak cieyurenkare-ita un itak-anu ani hempar omare-aeywankep a=askayre easkay.",
     "ext-uls-language-settings-applying": "A=anu hine…",
     "ext-uls-compact-link-count": "$1 itak",
-    "ext-uls-compact-link-info": "Itak opitta (iyeywankekur ukonumke sine ca)",
+    "ext-uls-compact-link-info": "Itak opitta (ieywankekur ukonumke sine ca)",
     "prefs-languages": "Itak",
     "ext-uls-compact-language-links-preference": "[[$1|yonpa itak ukotep]] eywanke wa, e=eyam itak patek a=nukar",
     "ext-uls-compact-no-results": "Tan sos a=hunara itak sak.",
