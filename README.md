@@ -9,7 +9,7 @@ There `ain.json` file is based on `ja.json` with some Ainu translations. The `ja
 
 There are also localization files in the extension directory, which are having a similar file structure of `ain.json`, `ja.json`, and `en.json` for each extension. The latter two are also located in each extension's distributed package. See those files for the original author. There are also a `metadata.json` file in each extension directory, to denote the mapping relationship between the local and remote localization files.
 
-Welcome to contribute by PR or contact me to join the project. **Before translating, please read [TRANSLATING.md](TRANSLATING.md)** for the conventions, the glossary (source of truth), and reference works. There is also a general-purpose glossary table we maintain here:
+Welcome to contribute by PR or contact me to join the project. **Before translating, please read [TRANSLATING.md](TRANSLATING.md)** for the conventions, the glossary (source of truth), and reference works; see [TRANSLATION-GUIDANCE.md](TRANSLATION-GUIDANCE.md) for grammar rules with examples, the local MediaWiki glossary, and pitfalls. There is also a general-purpose glossary table we maintain here:
 https://docs.google.com/spreadsheets/d/1zV0gl4TWV5fkf2r9i_1P1jmH_p7LOzbhZQgm7mPwDdE/edit?usp=sharing
 
 ### Japanese
@@ -19,7 +19,7 @@ https://docs.google.com/spreadsheets/d/1zV0gl4TWV5fkf2r9i_1P1jmH_p7LOzbhZQgm7mPw
 
 また、各拡張機能ディレクトリにもローカライズファイルがあり、各拡張機能の配布パッケージにも`ain.json`、`ja.json`、`en.json`のような類似したファイル構造があります。後者の2つも、それぞれの拡張機能の配布パッケージにあります。元の著者については、これらのファイルを参照してください。また、各拡張機能ディレクトリには、ローカルとリモートのローカライズファイルのマッピング関係を示す`metadata.json`ファイルもあります。
 
-参加するには、PRを出していただくか、参加ご連絡いただければ幸いです。**翻訳の前に、表記規則・用語集（典拠）・参考文献をまとめた [TRANSLATING.md](TRANSLATING.md) をお読みください。** また、一般用の翻訳用語一覧表も以下のURLにて管理・公開しております。
+参加するには、PRを出していただくか、参加ご連絡いただければ幸いです。**翻訳の前に、表記規則・用語集（典拠）・参考文献をまとめた [TRANSLATING.md](TRANSLATING.md) をお読みください。** 文法規則の作例・MediaWiki専用ローカル用語集・注意点については [TRANSLATION-GUIDANCE.md](TRANSLATION-GUIDANCE.md) をご覧ください。また、一般用の翻訳用語一覧表も以下のURLにて管理・公開しております。
 https://docs.google.com/spreadsheets/d/1zV0gl4TWV5fkf2r9i_1P1jmH_p7LOzbhZQgm7mPwDdE/edit?usp=sharing
 
 ## Enable script conversion
